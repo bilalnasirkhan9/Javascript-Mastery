@@ -76,7 +76,94 @@ console.log(mynewconst08);
 
 // how to create objects
 
+const $userData = {
+    name: "Bilal Nasir",
+    age: 19,
+    hobbies: ["learning code", "Traveling world video", "driving car"]
+}
+console.log($userData);
+
 // how to access data from objects
+console.log($userData.name);
+console.log($userData["age"]); // There is another way excutted a using string // By default obj key value is also in string
+console.log($userData.hobbies);
 
 // how to add key value pair to objects
+$userData["gender"] = "Male"; // Added one more gender key value pair
+$userData.City = "Karachi"; // That is the also way to add new key value
+console.log($userData);
 
+// <--------------------JavaScript Mastery Lesson No : 37 ------------------------------>
+
+// difference between dot and bracket notaion advantage and diss advantage dot and bracket
+const $userEmailData = "Email"
+const $personData = {
+    name: "Harshit",
+    age: 28,
+    "person hobbies": ["Guitar", "Sleeping", "Listening"]
+}
+
+// console.log(person["person hobbies"]); //
+$personData[$userEmailData] = "bilalnasirkhan9@gmail.com"
+console.log($personData);
+
+// <--------------------JavaScript Mastery Lesson No : 38 ------------------------------>
+// how to iterate object
+
+const $peopleIterateData = {
+    "Name": "Subhan",
+    "Last Name": "Ali",
+    age: 18,
+
+}
+// for in loop
+// object.keys
+
+for(let $peopleKey in $peopleIterateData){
+    console.log(`${$peopleKey} : ${$peopleIterateData[$peopleKey]}`);
+}
+
+// <--------------------JavaScript Mastery Lesson No : 39 ------------------------------>
+
+// computed properties
+
+const $key1 = "objectkey1";
+const $key2 = "objectkey2";
+
+const valuekey1 = "myvaluekey1";
+const valuekey2 = "myvaluekey2";
+
+const $objSubTotal = {
+    [$key1]: valuekey1,
+    [$key2]: valuekey2,
+}
+console.log($objSubTotal);
+
+// <--------------------JavaScript Mastery Lesson No : 40 ------------------------------>
+
+// spred operator with array
+ const arraypeople1 = [1, 2, 3,];
+ const arraypeople2 = [4, 5, 6,];
+
+ const $arraypeoplespreed = [...arraypeople1, ...arraypeople2 , 94, 429,];
+ console.log($arraypeoplespreed);
+
+ // spred operator with object
+
+ const peoplemainobj = {
+    topkey1: "value No 1",
+    topkey2: "value No 2"
+ }
+
+ const peoplemainobj2 = {
+    topkey3: "value No 3",
+    topkey4: "value No 4",
+    topkey5: "value No 5"
+ }
+ const newmainobj = {...peoplemainobj, ...peoplemainobj2};
+ console.log(newmainobj);
+
+ const newabcobj = {... "abcdefghijklmnopqurstuvwxyz"};
+ console.log(newabcobj);
+
+ // <--------------------JavaScript Mastery Lesson No : 41 ------------------------------>
