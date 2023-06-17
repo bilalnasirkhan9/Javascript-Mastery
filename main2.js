@@ -65,3 +65,18 @@ let [myconst1, myconst2, ...mynewconst08] = destructArray;
 console.log(`value of myconst 1 ${myconst1}`)
 console.log(`value of myconst 2 ${myconst2}`)
 console.log(mynewconst08);
+
+// <--------------------JavaScript Mastery Lesson No : 36 ------------------------------>
+
+// object
+// array are good but not sufficient
+// for real world data
+// objects store key value pairs
+// objects don't have index
+
+// how to create objects
+
+// how to access data from objects
+
+// how to add key value pair to objects
+
