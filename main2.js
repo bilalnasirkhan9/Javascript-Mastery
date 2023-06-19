@@ -167,3 +167,45 @@ console.log($objSubTotal);
  console.log(newabcobj);
 
  // <--------------------JavaScript Mastery Lesson No : 41 ------------------------------>
+
+ // object destructurcing
+
+ const band = {
+    bandName: "led zepplin",
+    famousSong: "stairway to heaven",
+    year: 1999,
+    anotherFamousSong: "kashmir banai ka Pakistan",
+ };
+const {bandName, famousSong, ...restData} = band;
+ console.log(bandName);
+ console.log(restData);
+
+  // <--------------------JavaScript Mastery Lesson No : 42 ------------------------------>
+
+  // objects inside array
+  // very usefull in real world application
+
+  const usermanual =[
+    {userId: 1, MainName: "Bilal", gender: "male"},
+    {userId: 2, MainName: "Arfa", gender: "female"},
+    {userId: 3, MainName: "Hassan", gender: "male"},
+];
+for(let user of usermanual){
+    // console.log(user.userId, user.MainName, user.gender,);
+    console.log(`Id | ${user.userId} | Name : ${user.MainName} Gender : ${user.gender}`)
+}
+
+ // <--------------------JavaScript Mastery Lesson No : 43 ------------------------------>
+// Nested destructuring
+
+const usermanual2 =[
+    {userage: 12, addrees: "Orange", street: "Tariq Road"},
+    {userage: 32, addrees: "Korangi", streetr: "Power House"},
+    {userage: 21, addrees: "Hassan Square", street: "Nagan"},
+];
+
+const [{addrees: varuser1}, , {street: varuser3}] = usermanual2;
+console.log(varuser1);
+console.log(varuser3);
+
+ // <--------------------JavaScript Mastery Lesson No : 44 ------------------------------>
