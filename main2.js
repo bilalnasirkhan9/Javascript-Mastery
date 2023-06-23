@@ -20,7 +20,7 @@ const $fruitConst = ["apple", "mongo", "grapes"];
 const $fruitConst2 = [];
 let i = 0;
 while (i<$fruitConst.length){
-    $fruitConst2.push($fruitConst[i].toUpperCase());
+    $fruitConst2.push($fruitConst[i]);
     i++;
 }
 console.log($fruitConst2);
@@ -209,3 +209,50 @@ console.log(varuser1);
 console.log(varuser3);
 
  // <--------------------JavaScript Mastery Lesson No : 44 ------------------------------>
+
+ // function
+ function singHappyBirthday(){
+    console.log("Happy Birthday to you ..... ");
+ }
+
+function sumTwoNumber(reflex1, reflex2){
+    return reflex1 + reflex2;
+}
+console.log(sumTwoNumber(20, 30));
+
+// odd or even
+// input : 1` number
+// output : true
+
+function isEven(number){
+    if(number % 2 === 0){
+        return true;
+    }
+    else{
+       return false;
+    }
+}
+console.log(isEven(5));
+
+
+function stringFirstLetter(anyThing){
+    return anyThing[0];
+}
+console.log(stringFirstLetter("Danial"));
+
+// function
+// input : array, target (number)
+// output : index to target if target present in array
+
+function findTarget(finder, target){
+    for(let i = 0; i<finder.length; i++){
+        if(finder[i]===target){
+            return i;
+        }
+    }
+    return -1
+}
+
+const myArray = [1, 3, 8, 90]
+const ans = findTarget(myArray, 8);
+console.log(ans);
