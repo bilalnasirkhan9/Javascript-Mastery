@@ -254,5 +254,21 @@ function findTarget(finder, target){
 }
 
 const myArray = [1, 3, 8, 90]
-const ans = findTarget(myArray, 8);
+const ans = findTarget(myArray, 3);
 console.log(ans);
+
+ // <--------------------JavaScript Mastery Lesson No : 45 ------------------------------>
+
+ // function expression
+
+ const singHappyBirdthDayToBilal = function(){
+    console.log("Happy Birthday to me.....")
+ }
+
+ singHappyBirdthDayToBilal();
+
+const sumFiveNumber = function(num1, num2, num3){
+    return num1 + num2 + num3;
+}
+const ansOfFiveSum = sumFiveNumber(32, 56, 43);
+console.log(ansOfFiveSum);
