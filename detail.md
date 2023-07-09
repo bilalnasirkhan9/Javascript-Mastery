@@ -37,5 +37,50 @@ hota hai heap memory
 // truthy  falsy
 // js mein kuch bhi likho wo mainly do prakar mein se kisi ek prakaar ko belong karti hai truthy and falsy value
 // falsy values ye hai = 0 false undefined null NaN document.all
-// truthy value are all 
+// truthy value are all
 
+// forEach loop
+// forEach loop srif array pe chalta hai matlab ki jab bhi tumhaare paas ek array ho, tab use mein kaun aata hai foreach loop
+// forEach does'nt change the value of array its copy a array and modify it
+
+var a = [1,2,3,4,5,];
+a.forEach(function(val){
+    console.log(val+2)
+})
+
+// forIn
+// object par loop karne ke liye hota hai forin loop
+
+// var obj = {
+    name: bilal,
+    age: 19,
+    city, karachi
+}
+for (var key in obj){
+    console.log(key, obj[key]);
+}
+
+// callback function
+// aisa code jo baad me chalta hai use hum ek function dedete hai ke bhaiya job complete hojaana to ye function chala dena,
+// aur wo function jo hum dete hai wo ek normal fnc hi hota hai aur kahte hai callback function
+
+setTimeout(function(){
+    console.log("3 second ka bath")
+
+}, 3000)
+
+// first class function
+// js mein ek concept hai jiska matlab hota hai ki app function ko use kar sakte ho as a value
+
+// function abcd(a){
+    a()
+}
+abcd(fuction(){console.log("hello");})
+
+// delete object prop
+// var a = {
+    name: "billa",
+    age: 19
+}
+delete a.age;
+delete a.name;

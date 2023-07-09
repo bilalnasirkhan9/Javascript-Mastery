@@ -272,3 +272,8 @@ const sumFiveNumber = function(num1, num2, num3){
 }
 const ansOfFiveSum = sumFiveNumber(32, 56, 43);
 console.log(ansOfFiveSum);
+
+setTimeout(function(){
+    console.log("3 second ka bath")
+
+}, 3000)
