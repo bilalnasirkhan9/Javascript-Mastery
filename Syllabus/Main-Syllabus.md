@@ -31,4 +31,14 @@
 -  props vs methods
 -  updating object props
 -- how to delete object prop
--- pratice questions, scenarios 
+-- pratice questions, scenarios
+-- higher order function
+-- constructor function
+-- first class function
+-- new keywords
+-- iife
+-- prototype
+-- prototypal inheritance
+-- this call apply bind
+-- pure & impure function
+
